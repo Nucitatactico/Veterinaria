@@ -41,7 +41,6 @@ public class Dueno {
         System.out.println(mascota);
     }
 
-    //getters y setters
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
 

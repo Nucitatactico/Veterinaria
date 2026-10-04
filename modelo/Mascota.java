@@ -31,7 +31,6 @@ public class Mascota {
 		alergias.remove(alergia);
 	}
 
-	//getters y setters
 	public String getNombre() { 
 		return nombre;
 	}

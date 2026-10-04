@@ -20,8 +20,6 @@ public class Clinica{
         this.mascotas = new HashMap<>();
     }
 
-    //Duenos
-
     public void registrarDueno(Dueno dueno) {
         duenos.put(dueno.getNombre().toLowerCase(), dueno);
         System.out.println("Dueño registrado: " + dueno.getNombre());
@@ -30,8 +28,6 @@ public class Clinica{
     public Dueno buscarDueno(String nombre) {
         return duenos.get(nombre.toLowerCase());
     }
-
-    //Mascotas
 
     public void registrarMascota(Mascota mascota, String nomDueno) {
         Dueno dueno = buscarDueno(nomDueno);
@@ -79,8 +75,6 @@ public class Clinica{
     public List<Mascota> listarMascotas() {
         return new ArrayList<>(mascotas.values());
     }
-
-    //Citas
 
     public void agendarCita(String nomMascota, String motivo, LocalDate fecha) {
         Mascota m = buscarMascota(nomMascota);

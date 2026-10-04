@@ -19,7 +19,6 @@ public class Cita {
 		generarObservaciones();
 	}
 
-	//aleatorizadores
 	public String generarDiagnostico() {
 		this.diagnostico = GeneracionAleatoria.diagnostico();
 		return this.diagnostico;
@@ -35,7 +34,6 @@ public class Cita {
 		return this.observaciones;
 	}
 
-	//getters y setters
 	public String getMotivo() { return motivo; }
 	public void setMotivo(String motivo) { this.motivo = motivo; }
 

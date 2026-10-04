@@ -53,8 +53,6 @@ public class Menu {
 		} while (opcion != 0);
 	}
 
-	//Menu
-
 	private void mostrarMenu() {
 		System.out.println("\n\tClinica veterinaria");
 		System.out.println("1. Registrar dueño");
@@ -68,8 +66,6 @@ public class Menu {
 		System.out.println("9. Listar todas las mascotas");
 		System.out.println("0. Salir");
 	}
-
-	// Operaciones
 
 	private void registrarDueno() {
 		String nom = leerCadena("Nombre:    ");
@@ -149,22 +145,11 @@ public class Menu {
 			System.out.println("\n\t- " + m);
 	}
 
-	//Utilidades internas
-	/**
-	 * Lee una cadena desde la consola, eliminando espacios en blanco al inicio y final.
-	 * @param mensaje El mensaje que se mostrará al usuario.
-	 * @return La cadena ingresada sin espacios extremos.
-	 */
 	private String leerCadena(String mensaje) {
 		System.out.print(mensaje);
 		return sc.nextLine().trim();
 	}
 
-	/**
-	 * Lee un número entero desde la consola.
-	 * @param mensaje El mensaje que se mostrará al usuario.
-	 * @return El número entero ingresado, o 0 si ocurre un error.
-	 */
 	private int leerEntero(String mensaje) {
 		System.out.print(mensaje);
 		return Integer.parseInt(sc.nextLine().trim());	}
