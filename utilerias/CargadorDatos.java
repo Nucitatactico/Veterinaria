@@ -4,9 +4,6 @@ import modelo.Dueno;
 import modelo.Mascota;
 import sistema.Clinica;
 
-/**
- * Clase de utilería para cargar datos de prueba en el sistema.
- */
 public class CargadorDatos {
 
 	/**

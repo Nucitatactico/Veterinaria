@@ -4,9 +4,6 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-/**
- * Entidad Mascota
- */
 public class Mascota {
 
 	private String nombre;
@@ -78,8 +75,6 @@ public class Mascota {
 		return alergias;
 	}
 
-	//Overriders
-	//Es necesario hacer un Override a los siguientes 2 metodos para tener un hasheo apropiado
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) 

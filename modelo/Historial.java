@@ -5,10 +5,6 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
-/**
- * Historial clínico de una mascota. Contiene un mapa de citas
- * indexadas por fecha (TreeMap para mantenerlas ordenadas).
- */
 public class Historial {
 
 	private String nombreMascota;
@@ -33,8 +29,7 @@ public class Historial {
 	}
 
 	public String getNomMascota() { return nombreMascota; }
-
-	/** Devuelve una vista no modificable del mapa de citas. */
+	
 	public Map<LocalDate, Cita> getCitas() {
 		return Collections.unmodifiableMap(citas);
 	}

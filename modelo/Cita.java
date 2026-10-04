@@ -3,9 +3,6 @@ package modelo;
 import java.time.LocalDate;
 import utilerias.GeneracionAleatoria;
 
-/**
- * Representa una consulta médica agendada para una mascota.
- */
 public class Cita {
 
 	private String motivo;

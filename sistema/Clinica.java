@@ -10,17 +10,6 @@ import modelo.Cita;
 import modelo.Dueno;
 import modelo.Mascota;
 
-/**
- * Servicio central. Mantiene todos los dueños y mascotas registrados
- * y coordina las operaciones entre ellos.
- *
- * Colecciones usadas:
- *   - Map<String, Dueno>   - dueños indexados por nombre
- *   - Map<String, Mascota> - mascotas indexadas por nombre
- *   - List<Mascota>        - dentro de cada Dueno
- *   - Set<String>          - alergias dentro de Mascota
- *   - Map<LocalDate, Cita> - dentro de Historial
- */
 public class Clinica{
 
     private final Map<String, Dueno> duenos;

@@ -7,9 +7,7 @@ import modelo.Dueno;
 import modelo.Mascota;
 import sistema.Clinica;
 import utilerias.CargadorDatos;
-/**
- * Interfaz de consola. Solo captura datos y delega al servicio.
- */
+
 public class Menu {
 
 	private final Scanner sc;

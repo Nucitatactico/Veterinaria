@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * Dueño de una o más mascotas.
- */
 public class Dueno {
 
     private String nombre;
@@ -31,7 +28,6 @@ public class Dueno {
         mascotas.remove(mascota);
     }
 
-    /** Muestra los datos del dueño y la mascota indicada */
     public void describirDueno(Mascota mascota) {
         System.out.println("=== Datos del dueño ===");
         System.out.println("Nombre:   " + nombre);
@@ -40,7 +36,6 @@ public class Dueno {
         System.out.println("Mascota referida: " + mascota.getNombre());
     }
 
-    /** Muestra los datos de la mascota indicada. */
     public void describirMascota(Mascota mascota) {
         System.out.println("=== Datos de la mascota ===");
         System.out.println(mascota);
@@ -58,8 +53,6 @@ public class Dueno {
 
     public List<Mascota> getMascotas() { return mascotas; }
 
-    //Overrides
-    //Hacer un hasheo apropiado requiere los dos sigueintes override
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

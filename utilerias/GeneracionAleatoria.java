@@ -2,15 +2,10 @@ package utilerias;
 
 import java.util.Random;
 
-/**
- * Genera cadenas aleatorias para diagnósticos, tratamientos y observaciones.
- *PD: ahi lo tunean esto, las cosas que pone son producto de la IA, las ponen más chispa
- */
 public final class GeneracionAleatoria {
 
     private static final Random RND = new Random();
 
-    // ---------- DATOS SEMILLA (ampliar libremente) ----------
     private static final String[] DIAGNOSTICOS = {
         "Infección respiratoria leve",
         "Cuadro alérgico cutáneo",
@@ -21,7 +16,8 @@ public final class GeneracionAleatoria {
         "Fractura simple en pata trasera",
         "Conjuntivitis bacteriana",
         "Parasitosis intestinal",
-        "Desnutrición leve"
+        "Desnutrición leve",
+        "Cancer cervical"
     };
 
     private static final String[] TRATAMIENTOS = {
@@ -34,7 +30,8 @@ public final class GeneracionAleatoria {
         "Inmovilización con venda y reposo 3 semanas",
         "Colirio antibiótico cada 6 h por 7 días",
         "Desparasitante oral dosis única",
-        "Suplemento vitamínico diario por 15 días"
+        "Suplemento vitamínico diario por 15 días",
+        "Eutanasia"
     };
 
     private static final String[] OBSERVACIONES = {
