@@ -1,0 +1,2 @@
+#Para no se guarden los .class en el repositorio
+*.class
