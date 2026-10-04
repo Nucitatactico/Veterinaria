@@ -24,6 +24,8 @@ public class Menu {
 		do {
 			mostrarMenu();
 			opcion = leerEntero("Opción: ");
+			System.out.println("");
+
 			switch (opcion) {
 				case 1->
 					registrarDueno();
@@ -54,7 +56,7 @@ public class Menu {
 	//Menu
 
 	private void mostrarMenu() {
-		System.out.println("menu");
+		System.out.println("\n\tClinica veterinaria");
 		System.out.println("1. Registrar dueño");
 		System.out.println("2. Registrar mascota");
 		System.out.println("3. Modificar mascota");
@@ -111,7 +113,7 @@ public class Menu {
 			System.out.println("No existe ese dueño.");
 			return;
 		}
-		System.out.println("\n=== " + d + " ===");
+		System.out.println("\n==== " + d + " ====");
 		System.out.println("Mascotas:");
 		for (Mascota m : d.getMascotas())
 			System.out.println("  - " + m);
@@ -142,9 +144,9 @@ public class Menu {
 	}
 
 	private void listarMascotas() {
-		System.out.println("mascotas en el sistema");
+		System.out.println("==== Mascotas en el sistema ====");
 		for (Mascota m : clinica.listarMascotas())
-			System.out.println("  - " + m);
+			System.out.println("\n\t- " + m);
 	}
 
 	//Utilidades internas

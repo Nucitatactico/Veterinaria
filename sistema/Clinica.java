@@ -72,7 +72,7 @@ public class Clinica{
         if (m != null) {
             Dueno d = buscarDueno(m.getNomDueno());
             if (d != null) d.eliminarMascota(m);
-            System.out.println("Mascota eliminada: " + nombre);
+            System.out.println("Descansa en paz " + nombre);
         }
     }
 
