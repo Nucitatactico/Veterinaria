@@ -1,0 +1,46 @@
+classDiagram
+    class Mascota {
+        +String nombre
+        +String especie
+        +String raza
+        +int edad
+        +String nomDueno
+        +Historial historial
+        +Set~String~ alergias
+    }
+
+    class Dueno {
+        +String nombre
+        +String telefono
+        +String direccion
+        +List~Mascota~ mascotas
+        +agregarMascota(Mascota) void
+        +eliminarMascota(Mascota) void
+        +describirDueno(Mascota) void
+        +describirMascota(Mascota) void
+    }
+
+    class Historial {
+        +String nomMascota
+        +Map~LocalDate, Cita~ citas
+        +agendarCita(nomMascota, Cita) void
+        +cancelarCita(nomMascota, LocalDate) void
+    }
+
+    class Cita {
+        +String motivo
+        +LocalDate fecha
+        +String diagnostico
+        +String tratamiento
+        +String observaciones
+        +generarDiagnostico() String
+        +generarTratamiento() String
+        +generarObservaciones() String
+    }
+
+    Dueno "1" --> "*" Mascota : List<Mascota>
+    Mascota "1" *-- "1" Historial : composición
+    Historial "1" o-- "*" Cita : Map<LocalDate, Cita>
+    Dueno ..> Historial : agendarCita() / cancelarCita()
+    Historial ..> Cita : crea
+
