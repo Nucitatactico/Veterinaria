@@ -12,8 +12,8 @@ public class CargadorDatos {
 	 */
 	public static void cargar(Clinica clinica) {
 		// Registra Dueños
-		clinica.registrarDueno(new Dueno("Ana López", "555-1234", "Av. Reforma 100"));
-		clinica.registrarDueno(new Dueno("Luis Pérez", "555-5678", "Calle Sol 42"));
+		clinica.registrarDueno(new Dueno("Ana Lopez", "555-1234", "Av. Reforma 100"));
+		clinica.registrarDueno(new Dueno("Luis Perez", "555-5678", "Calle Sol 42"));
 
 		//Registra Mascotas
 		Mascota m1 = new Mascota("Firulais", "Perro", "Labrador", 3, "Ana López");
