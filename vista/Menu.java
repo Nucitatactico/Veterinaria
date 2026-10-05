@@ -45,6 +45,10 @@ public class Menu {
 					mostrarHistorial();
 				case 9->
 					listarMascotas();
+				case 10->
+					agregarAlergia();
+				case 11->
+					eliminarAlergia();
 				case 0->
 					System.out.println("Adios tonotos...");
 				default->
@@ -64,6 +68,8 @@ public class Menu {
 		System.out.println("7. Cancelar cita");
 		System.out.println("8. Mostrar historial de mascota");
 		System.out.println("9. Listar todas las mascotas");
+		System.out.println("10. Agregar alergia a mascota");
+		System.out.println("11. Eliminar alergia a mascota");
 		System.out.println("0. Salir");
 	}
 
@@ -143,6 +149,28 @@ public class Menu {
 		System.out.println("==== Mascotas en el sistema ====");
 		for (Mascota m : clinica.listarMascotas())
 			System.out.println("\n\t- " + m);
+	}
+
+	private void agregarAlergia() {
+		String nom = leerCadena("Nombre de la mascota: ");
+		Mascota m = clinica.buscarMascota(nom);
+		if (m != null) {
+			String alergia = leerCadena("Alergia a agregar: ");
+			m.agregarAlergia(alergia);
+		}
+		else
+			System.out.println("Mascota no encontrada");
+	}
+	
+	private void eliminarAlergia() {
+		String nom = leerCadena("Nombre de la mascota: ");
+		Mascota m = clinica.buscarMascota(nom);
+		if (m != null) {
+			String alergia = leerCadena("Alergia a eliminar: ");
+			m.eliminarAlergia(alergia);
+		}
+		else
+			System.out.println("Mascota no encontrada");
 	}
 
 	private String leerCadena(String mensaje) {

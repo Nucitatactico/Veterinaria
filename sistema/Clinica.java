@@ -37,6 +37,8 @@ public class Clinica{
             mascotas.put(mascota.getNombre().toLowerCase(), mascota);
             System.out.println("Mascota registrada: " + mascota.getNombre());
         }
+        else
+            System.out.println("No existe el dueño " + nomDueno);
     }
 
     public Mascota buscarMascota(String nombre) {

@@ -28,14 +28,6 @@ public class Dueno {
         mascotas.remove(mascota);
     }
 
-    public void describirDueno(Mascota mascota) {
-        System.out.println("=== Datos del dueño ===");
-        System.out.println("Nombre:   " + nombre);
-        System.out.println("Teléfono: " + telefono);
-        System.out.println("Dirección:" + direccion);
-        System.out.println("Mascota referida: " + mascota.getNombre());
-    }
-
     public void describirMascota(Mascota mascota) {
         System.out.println("=== Datos de la mascota ===");
         System.out.println(mascota);

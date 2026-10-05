@@ -26,7 +26,19 @@ public final class GeneracionAleatoria {
         "Sindrome de protafonista",
         "Cleptomanía",
         "Moquillo",
-        "Intoxicación"
+        "Intoxicación",
+        "Depresión",
+        "Posesión por espíritu",
+        "Fobia al agua seca",
+        "Insomnio por existencia",
+        "Crisis existencial de las 3:00am",
+        "Trastorno de personalidad múltiple",
+        "Sordera voluntaria",
+        "Dislocación de cadera",
+        "Crisis de identidad",
+        "Gripe aviar",
+        "Cataratas seniles",
+        "Hipo"
     };
 
     private static final String[] TRATAMIENTOS = {
@@ -41,13 +53,40 @@ public final class GeneracionAleatoria {
         "Desparasitante oral dosis única",
         "Suplemento vitamínico diario por 15 días",
         "Eutanasia",
+        "Eutanasia",
+        "Eutanasia",
+        "Eutanasia",
+        "Eutanasia",
+        "Eutanasia",
+        "Eutanasia",
+        "Eutanasia",
+        "Eutanasia",
+        "Eutanasia",
         "Vacaciones en Veracruz durante 10 años",
         "Encerrar y olvidar la llave",
         "Prender incienso cada 12 horas durante 2 semanas",
         "Castrar",
         "Rapar y poner un cono",
         "Colonoscopia urgente",
-        "Lavado de estomago"
+        "Lavado de estomago",
+        "Limpia al dueño",
+        "Paticure",
+        "Enseñar a leer",
+        "Pelea a muerte",
+        "Tomar año sabático",
+        "Cambiar de dueño",
+        "Cambiar de carrera a contaduría",
+        "Terapia de pareja",
+        "Ver videos de pájaros en YouTube por 4 horas",
+        "Intervención familiar para discutir su conducta",
+        "Cirugía exploratoria de emergencia",
+        "No juzgar sus decisiones",
+        "Mandarlo a un internado militar en Suiza",
+        "Anestesia general para cortarle las uñas",
+        "Sesión de hipnósis",
+        "Llevarlo con un chamán",
+        "Masaje de patas con aceites esenciales de lavanda",
+        "Lectura de tarot"
     };
 
     private static final String[] OBSERVACIONES = {
@@ -66,7 +105,18 @@ public final class GeneracionAleatoria {
         "La recepcionista se desmayo por lo feo que estaba la mascota",
         "La mascota mató a otra que salia de su tratamiento intensivo",
         "La mascota escapó",
-        "La mascota defecó en toda la área de revisión."
+        "La mascota defecó en toda la área de revisión.",
+        "Mordió a un ingeniero industrial",
+        "Perdió su credencial de la UNAM y no pudo hacer su práctica de laboratorio",
+        "La mascota esta organizando un paro",
+        "La mascota lucho contra su sombra y perdió",
+        "La mascota se rehusó a subir a la báscula por temas de autoestima",
+        "El dueño lloró más que la mascota durante la inyección",
+        "El dueño se hizo el muerto para no pagar la consulta",
+        "El dueño olvidó a la mascota",
+        "Paciente se declaró en huelga de hambre hasta que le regresen sus testículos",
+        "La mascota fingió cojera hasta que vió una ardilla en un árbol",
+        "Se le dio de alta por buen comportamiento, pero se le prohíbe regresar"
     };
 
     public static String diagnostico() {
